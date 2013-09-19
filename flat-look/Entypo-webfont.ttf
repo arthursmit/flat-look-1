@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+		<meta name="robots" content="noindex, nofollow" />
+
+		<title>\\ Fat Motif Test \\</title>
+
+		<link type="text/css" rel="stylesheet" href=".docs.css" />
+		<link type="text/css" rel="stylesheet" href="mmenu.css" />
+        <link rel="stylesheet" href="flat.css" />
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../jquery.mmenu.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+	</head>
+	<body>
+		<div id="page">
+			
+			<div id="content">
+            <div class="wrapper" >
+     
+        <div class="navigation">
+	
+        	<div class="sidecolors">
+                <div class="sidecolor1">
+                </div>
+                <div class="sidecolor2">
+                </div>
+                <div class="sidecolor3">
+                </div>
+                <div class="sidecolor4">
+                </div>
+                <div class="sidecolor5">
+                </div>
+            </div>
+        	<span class="topnav-total">
+                <span class="lightnumbers">
+                 $
+                </span>
+                <span class="bignumbers">
+                 1,265,039
+                 </span>
+                 <div class="topnav-label"> 
+                     <div class="topnav-spk1">
+                     </div>   
+                 Total
+                 </div>
+             </span>
+             
+             <span class="topnav-total">
+                <span class="lightnumbers">
+                 +
+                </span>
+                <span class="bignumbers">
+                 0.9
+                 </span>
+                 <span class="lightnumbers">
+                 %
+                </span>
+                 <div class="topnav-label"> 
+                     <div class="topnav-spk2">
+                     </div>   
+                 Change
+                 </div>
+             </span>
+             
+      
+             
+             <span class="topnav-total">
+                <span class="lightnumbers">
+                 $
+                </span>
+                <span class="bignumbers">
+                 1,265 &nbsp; 
+                 </span>
+                 <div class="topnav-label"> 
+                     <div class="topnav-spk3">
+                     </div>   
+                 Dividends
+                 </div>
+             </span>
+             
+             <span class="topnav-total">
+                <span class="lightnumbers">
+                 +
+                </span>
+                <span class="bignumbers">
+                 1.2
+                 </span>
+                 <span class="lightnumbers">
+                 %
+                </span>
+                 <div class="topnav-label"> 
+                     <div class="topnav-spk5">
+                     </div>   
+                 Growth
+                 </div>
+             </span>
+             
+             <span class="topnav-total">
+                <span class="lightnumbers">
+                 -
+                </span>
+                <span class="bignumbers">
+                 0.6
+                 </span>
+                 <span class="lightnumbers">
+                 %
+                </span>
+                 <div class="topnav-label"> 
+                     <div class="topnav-spk1">
+                     </div>   
+                 Risk
+                 </div>
+             </span> 
+             <a href="#menu">
+             <div class="topnav-menu">
+             i
+             </div> 
+             </a> 
+             <span class="topnav-user">
+                <span class="username">
+                 John Doe
+                </span>
+                <div class="styled-select">
+                   <select>
+                      <option>BNK-1234308FE</option>
+                      <option>BNK-4659308AS</option>
+                   </select>
+				</div>
+             </span>  
+            
+              
+                 
+                <div class="buttons">
+                <a href="port.html">
+                    <div class="bigbutton">
+                    w
+                    </div>
+                    <div class="bigbutton">
+                    t
+                    </div>
+                    <div class="bigbutton">
+                    v
+                    </div>
+                    <div class="bigbutton">
+                    M
+                    </div>
+                     <div class="bigbutton">
+                    2
+                    </div>
+                    <div class="bigbutton">
+                    c
+                    </div>
+                       <div class="bigbutton">
+                    G
+                    </div>
+                     <div class="bigbutton">
+                    4
+                    </div>
+                    <div class="bigbutton">
+                    x
+                    </div>
+                 </a>
+            	</div>
+        </div>
+        
+        
+        
+        
+    </div>
+            
+            
+            
+			</div>
+			<nav id="menu">
+				<ul>
+					<li class="Selected"><a href="index.html">Start Screen</a></li>
+					<li><a href="port.html">Portfolio Manager</a></li>
+					<li><a href="port.html">Submenus</a></li>
+					<li><a href="port.html">Labels</a></li>
+					<li><a href="port.html">Counters</a></li>
+					<li><a href="port.html">Selected item</a></li>
+					<li><a href="port.html">Open the menu</a></li>
+					<li><a href="port.html">Close the menu</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>

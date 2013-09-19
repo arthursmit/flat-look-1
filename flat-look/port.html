@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="content-type" content="text/html;charset=iso-8859-1" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=no" />
+		<meta name="robots" content="noindex, nofollow" />
+
+		<title>\\ Flat Motif Test \\</title>
+
+		<link type="text/css" rel="stylesheet" href=".docs.css" />
+		<link type="text/css" rel="stylesheet" href="mmenu.css" />
+        <link rel="stylesheet" href="flat.css" />
+        <link rel="stylesheet" type="text/css" href="accord.css" />
+		
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script type="text/javascript" src="../../../jquery.mmenu.min.js"></script>
+        <script src="Chart.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu();
+			});
+		</script>
+        <script type="text/javascript">
+		function updateSlider(slideAmount) {
+		//get the element
+		var display = document.getElementById("chosen");
+		//show the amount
+		display.innerHTML=slideAmount;
+		//get the element
+		var pic = document.getElementById("pic");
+		//set the dimensions
+		pic.style.width=slideAmount+"%";
+		pic.style.height=slideAmount+"%";
+		
+		}
+		</script>
+
+        
+	</head>
+	<body>
+		<div id="page">
+			<div id="content">
+        		<div class="portfolioback" >
+                    <div class="scrollarea" >
+                        <div class="portcontent" >
+                        </div>
+                        <div class="section-heading">
+                        Dividends & Sector Weighting
+                        </div>
+                        
+                        <canvas id="canvas" height="200" width="220"></canvas>
+	<script>
+		var barChartData = {
+			labels : ["Q1","Q2","Q3","Q4","Q5"],
+			datasets : [
+				{
+					fillColor : "#128085",
+					strokeColor : "rgba(220,220,220,0.0)",
+					data : [65,59,90,81,56]
+				}
+			]
+			
+		}
+
+	var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData);
+	</script>
+
+		<canvas id="canvas2" height="200" width="200"></canvas>
+	<script>
+
+		var doughnutData = [
+				{
+					value: 65,
+					color:"#C74029"
+				},
+				{
+					value: 35,
+					color:"#C74029"
+				},
+				{
+					value: 20,
+					color:"#C74029"
+				},
+				{
+					value : 50,
+					color : "#ECAA43"
+				},
+				{
+					value : 25,
+					color : "#ECAA43"
+				},
+				{
+					value : 10,
+					color : "#ECAA43"
+				},
+				{
+					value : 40,
+					color : "#128085"
+				},
+							{
+					value : 20,
+					color : "#128085"
+				},
+				{
+					value : 20,
+					color : "#9CC729"
+				},
+				{
+					value : 15,
+					color : "#9CC729"
+				},
+				{
+					value : 5,
+					color : "#9CC729"
+				},
+				{
+					value : 32,
+					color : "#fff"
+				}
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("canvas2").getContext("2d")).Doughnut(doughnutData);
+	</script>
+    
+    <canvas id="canvas3" height="180" width="180"></canvas>
+	<script>
+
+		var doughnutData = [
+				{
+					value: 120,
+					color:"#C74029"
+				},
+				{
+					value : 85,
+					color : "#ECAA43"
+				},
+				{
+					value : 60,
+					color : "#128085"
+				},
+				{
+					value : 40,
+					color : "#9CC729"
+				},
+				{
+					value : 32,
+					color : "#385052"
+				}
+			
+			];
+
+	var myDoughnut = new Chart(document.getElementById("canvas3").getContext("2d")).Doughnut(doughnutData);
+	</script>
+                        
+                        
+                        
+                        
+                        <section class="ac-container">
+				<div>
+					<input id="ac-1" name="accordion-1" type="checkbox">
+					<label for="ac-1">Securities
+                    <div class="bar-val">320</div>
+                    <div class="bar-change-green">+0.2</div>
+                    <div class="sectorbar">
+                    <div class="bar1"></div></div>
+                    </label>
+					<article class="ac-medium">
+						<p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows.</p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-2" name="accordion-1" type="checkbox">
+					<label for="ac-2">Energy
+                    <div class="bar-val">289</div>
+                    <div class="bar-change-green">+0.2</div>
+                    <div class="sectorbar"><div class="bar2"></div></div>
+                    </label>
+					<article class="ac-medium">
+						<p>Like you, I used to think the world was this great place where everybody lived by the same standards I did, then some kid with a nail showed me I was living in his world, a world where chaos rules not order, a world where righteousness is not rewarded. That's Cesar's world, and if you're not willing to play by his rules, then you're gonna have to pay the price. </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-3" name="accordion-1" type="checkbox">
+					<label for="ac-3">Metals
+                    <div class="bar-val">221</div>
+                    <div class="bar-change-red">-0.1</div>
+                    <div class="sectorbar"><div class="bar3"></div></div>
+                    </label>
+					<article class="ac-medium">
+						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
+					</article>
+				</div>
+				<div>
+                <input id="ac-4" name="accordion-1" type="checkbox">
+					<label for="ac-4">Technology
+                    <div class="bar-val">6</div>
+                    <div class="bar-change-green">+1.5</div>
+                    <div class="sectorbar"><div class="bar4"></div></div>
+                    </label>
+					<article class="ac-medium">
+						<p>You think water moves fast? You should see ice. It moves like it has a mind. Like it knows it killed the world once and got a taste for murder. After the avalanche, it took us a week to climb out. Now, I don't know exactly when we turned on each other, but I know that seven of us survived the slide... and only five made it out. Now we took an oath, that I'm breaking now. We said we'd say it was the snow that killed the other two, but it wasn't. Nature is lethal but it doesn't hold a candle to man. </p>
+					</article>
+				</div>
+				<div>
+					<input id="ac-5" name="accordion-1" type="checkbox">
+					<label for="ac-5">Finance
+                    <div class="bar-val">51</div>
+                    <div class="bar-change-red">-1.1</div>
+                    <div class="sectorbar"><div class="bar5"></div></div>
+                    </label>
+					<article class="ac-medium">
+						<p>You see? It's curious. Ted did figure it out - time travel. And when we get back, we gonna tell everyone. How it's possible, how it's done, what the dangers are. But then why fifty years in the future when the spacecraft encounters a black hole does the computer call it an 'unknown entry event'? Why don't they know? If they don't know, that means we never told anyone. And if we never told anyone it means we never made it back. Hence we die down here. Just as a matter of deductive logic. </p>
+					</article>
+				</div>
+			</section>
+            <hr>
+                        
+                        
+                        <div class="section-heading" >
+                        Portfolio Matcher
+                        </div><br><br>
+                        <div id="slider"> <input id="slide" type="range" min="0" max="100" step="1" value="50" onchange="updateSlider(this.value)"> <div id="chosen">50</div>
+                            <div class="slider-label" >
+                            Dividends
+                            </div>
+                        </div>
+                        
+                        <div id="slider"> <input id="slide" type="range" min="0" max="100" step="1" value="35" onchange="updateSlider(this.value)"> <div id="chosen">35</div>
+                            <div class="slider-label" >
+                            Growth
+                            </div>
+                        </div>
+                        
+                        <div id="slider"> <input id="slide" type="range" min="0" max="100" step="1" value="62" onchange="updateSlider(this.value)"> <div id="chosen">62</div>
+                            <div class="slider-label" >
+                            Risk
+                            </div>
+                        </div>
+                        
+                        <div class="quote-box" >
+                        This is a short narrative piece describing what the banks advice is on your portfolio. To the right are a few examples of other portfolios the bank reccomends you have a look at to try and match your desired performance
+                        </div>
+                
+                <div id="picHolder">
+                <img id="pic" src="cateye.jpg" alt="cat eye" style="width: 50%; height: 50%;">
+                </div>
+            </div>
+       				<div class="navigation">
+                        <div class="sidecolors">
+                        <div class="sidecolor1">
+                        </div>
+                        <div class="sidecolor2">
+                        </div>
+                        <div class="sidecolor3">
+                        </div>
+                        <div class="sidecolor4">
+                        </div>
+                        <div class="sidecolor5">
+                        </div>
+                    </div>
+                    
+        			<span class="topnav-total">
+                		<span class="lightnumbers">
+                 			$
+                		</span>
+                		<span class="bignumbers">
+                 		1,265,039
+                 		</span>
+                 		<div class="topnav-label"> 
+                     		<div class="topnav-spk1">
+                     		</div>   
+                 			Total
+                 		</div>
+             		</span>
+                         
+                 	<span class="topnav-total">
+                    	<span class="lightnumbers">
+                     	+
+                    	</span>
+                    	<span class="bignumbers">
+                     	0.9
+                     	</span>
+                     	<span class="lightnumbers">
+                     	%
+                    	</span>
+                     	<div class="topnav-label"> 
+                        	<div class="topnav-spk2">
+                        	</div>   
+                     		Change
+                     	</div>
+                 	</span>
+                     
+             		<span class="topnav-total">
+                		<span class="lightnumbers">
+                 		$
+                		</span>
+                		<span class="bignumbers">
+                 		1,265 &nbsp; 
+                 		</span>
+                 		<div class="topnav-label"> 
+                     		<div class="topnav-spk3">
+                     		</div>   
+                 			Dividends
+                 		</div>
+             		</span>
+             
+             		<span class="topnav-total">
+                		<span class="lightnumbers">
+                 		+
+                		</span>
+                		<span class="bignumbers">
+                 		1.2
+                 		</span>
+                 		<span class="lightnumbers">
+                 		%
+                		</span>
+                 		<div class="topnav-label"> 
+                     		<div class="topnav-spk5">
+                     		</div>   
+                 			Growth
+                 		</div>
+             		</span>
+             
+             		<span class="topnav-total">
+                		<span class="lightnumbers">
+                 		-
+                		</span>
+                		<span class="bignumbers">
+                 		0.6
+                 		</span>
+                 		<span class="lightnumbers">
+                 		%
+                		</span>
+                 		<div class="topnav-label"> 
+                     		<div class="topnav-spk1">
+                     		</div>   
+                 			Risk
+                 		</div>
+             		</span>
+                     
+             		<a href="#menu">
+             			<div class="topnav-menu">
+             			i
+             			</div> 
+             		</a>   
+             
+             		<span class="topnav-user">
+                		<span class="username">
+                 		John Doe
+                		</span>
+                		<div class="styled-select">
+                       		<select>
+                          		<option>BNK-1234308FE</option>
+                          		<option>BNK-4659308AS</option>
+                       		</select>
+						</div>
+             		</span>       
+        		</div>    
+    		</div>
+            
+          
+             Portfolio Managment page
+                
+
+			<nav id="menu">
+				<ul>
+					<li><a href="index.html">Start Screen</a></li>
+					<li class="Selected"><a href="port.html">Portfolio Manager</a></li>
+					<li><a href="port.html">Submenus</a></li>
+					<li><a href="port.html">Labels</a></li>
+					<li><a href="port.html">Counters</a></li>
+					<li><a href="port.html">Selected item</a></li>
+					<li><a href="port.html">Open the menu</a></li>
+					<li><a href="port.html">Close the menu</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
